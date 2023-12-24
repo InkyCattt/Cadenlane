@@ -1,5 +1,5 @@
 // Define a list of valid page names
-const validPageNames = ["Home", "Contact", "index"];
+const validPageNames = ["Home", "About", "Contact", "index"];
 
 function navigateTo(pageName) {
     // Check if the requested page name is in the list of valid page names

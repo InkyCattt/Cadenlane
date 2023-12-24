@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="x-icon" href="https://images.squarespace-cdn.com/content/v1/6274f0b3a87e01431c2a121c/60ac36e6-f36f-4342-ac11-abb7a155399e/favicon.ico?format=100w">
-    <title>C.L - Home</title>
+    <title>C.L - About</title>
     <style>
         body {
             background-color: #361c4e; /* Dark Purple background color */
@@ -14,9 +14,16 @@
             padding: 0;
         }
 
+        .text-container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
         .container {
             width: 80%;
             margin: 0 auto;
+            display: flex; /* Use flexbox to arrange the items horizontally */
+            justify-content: space-between; /* Add space between h1 and main-image */
         }
 
         header {
@@ -74,6 +81,14 @@
             padding: 10px;
             font-family: 'Garmond', serif; /* Garmond font for copyright text */
         }
+
+        .main-image {
+            border-radius: 20px;
+            width: 300px;
+            height: auto;
+            outline: #000000 5px solid;
+            
+        }
     </style>
 </head>
 <body>
@@ -81,8 +96,8 @@
     <header>
         <nav>
             <!-- Add the "underline" class to the Home link -->
-            <a href="#" onclick="navigateTo('Home')" class="underline">Home</a>
-            <a href="#" onclick="navigateTo('About')">About</a>
+            <a href="#" onclick="navigateTo('Home')">Home</a>
+            <a href="#" onclick="navigateTo('About')" class="underline">About</a>
             <a href="#" onclick="navigateTo('Media')">Media</a>
             <a href="#" onclick="navigateTo('BP')">Bios/Press</a>
             <a href="#" onclick="navigateTo('Contact')">Contact</a>
@@ -94,15 +109,24 @@
     </div>
 
     <div class="container">
+        <h1>MY HISTORY AND DEVELOPMENT</h1>
+        <img class="main-image" src="https://images.squarespace-cdn.com/content/v1/6274f0b3a87e01431c2a121c/2d432e93-8249-4dd4-a520-4b245b54554c/B%26W+Portrait+M.jpg?format=500w">
+    </div>
+
+    <div class="text-container">
         <!-- Your website content goes here -->
-        <h1>CADEN LANE</h1>
-        <p>A VISUAL ARTIST AND DESIGNER.</p>
+        <br>
+        <p>Hello, welcome to my website. I’m not exactly sure how to start out this message about myself. As my bio says, I was born and raised in Ontario, specifically that was South Oshawa for most of my life. </p>
+        <br>
+        <p>Throughout childhood I was raised by my mother, not staying in any apartment for more than three years. Half of the time, when explaining my story to people they begin believing that it is fictional, so I typically avoid all of the details. Here, I will give slight generalizations of sensitive subjects, but warn here that it touches on many forms of abuse, flaws of our legal system, and a heart crushing death.</p>
+        <br>
+        <p>Luckily, I avidly pursue philosophy and expression in coping with these subjects in my history, and will also explain the reasoning into the pursuits I have today largely focused on the subject of resiliency. Thus, the following message will also hold as a meta artist statement to my creations. </p>
     </div>
 
     <footer>
         &copy; 2023 Caden Lane. All Rights Reserved.
     </footer>
-    
+
     <script src="./MainPages.JS"></script>
 </body>
 </html>
